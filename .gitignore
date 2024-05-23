@@ -1,5 +1,6 @@
+# local
 __pycache__
 /venv
 .env
 .env-postgres
-docker-compose*
+docker-compose-dev.yml 

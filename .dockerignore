@@ -1,0 +1,12 @@
+# from local
+__pycache__
+/venv
+.env
+.env-postgres
+
+# from github
+docker-compose*
+Dockerfile
+LICENSE
+README.md
+.gitignore
