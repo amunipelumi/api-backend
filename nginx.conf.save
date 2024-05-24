@@ -1,0 +1,18 @@
+nginx
+http {
+    server {
+        # server block
+
+        # location block for static files        location /static {
+            alias /var/www/static;
+        }
+
+        # location block for PHP files
+        location ~ \.php$ {
+            try_files $uri =404;
+            fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+            fastcgi_param SCRIPT_FILENAME $request_filename;
+            include fastcgi_params;
+        }
+    }
+}
