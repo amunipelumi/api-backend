@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr, Field
-from pydantic.types import conint
+# from pydantic.types import conint
 from datetime import datetime
 from typing import Optional
 from typing_extensions import Annotated
@@ -37,7 +37,7 @@ class PostCreate(PostBase):
 
 class PostResponse(PostBase):
     id: int
-    # user_id: int
+    user_id: int
     created_at: datetime
     owner: User
 
