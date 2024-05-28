@@ -85,7 +85,7 @@ def test_posts(test_user, session, test_user2):
     posts_data = [
         {
             "title": "1st title",
-            "content": "first content",
+            "content": "1st content",
             "user_id": test_user['id']
         }, 
         {
@@ -99,8 +99,8 @@ def test_posts(test_user, session, test_user2):
             "user_id": test_user['id']
         }, 
         {
-            "title": "3rd title",
-            "content": "3rd content",
+            "title": "other title",
+            "content": "other content",
             "user_id": test_user2['id']
         }
     ]

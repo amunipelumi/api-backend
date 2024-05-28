@@ -52,4 +52,3 @@ def test_incorrect_login(client, username, password, status_code):
     )
     # print(res.json().get('detail'))
     assert res.status_code == status_code
-    # assert res.json().get('detail') == 'Invalid Credentials'
