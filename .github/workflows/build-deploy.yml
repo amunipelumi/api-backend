@@ -5,7 +5,7 @@ name: Build and Deploy Code
 on:
     push:
         branches:
-            - "main"
+            - ""
     # pull_request:
     #     branches:
     #         - "main"
